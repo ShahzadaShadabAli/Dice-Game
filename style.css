@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Geologica:wght@200;800&family=Kaushan+Script&family=Oswald&family=Shadows+Into+Light&display=swap');
+
+body {
+    background-color: #E3F2C1;
+}
+.heading {
+    font-size: 100px;
+    text-align: center;
+    font-family: Kaushan Script;
+    color: #AAC8A7;
+    margin: 30px 0;
+}
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+}
+
+.player-img {
+    width: 200px;
+    height: 200px;
+    background-color: #9c060c;
+    border-radius: 22px;
+    outline: none;
+    border: none;
+}
+
+.player {
+    text-align: center;
+    font-family: Comfortaa;
+    color: #A4D0A4;
+}
+
+.btn { 
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #9CA777;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-bottom: 8px solid #7C9070;
+    font-weight: 700;
+    color: white;
+    line-height: 26px;
+    position: relative;
+    left: 47%;
+    top: 20px;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.btn:active {
+    margin-top: 4px;
+    filter: brightness(0.8);
+    border-bottom: 4px solid #7C9070;
+}
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .heading {
+        font-size: 60px;
+    }
+    .player {
+        font-size: 15px;
+    }
+    .player-img {
+        height: 150px;
+        width: 150px;
+    }
+    .btn {
+        left: 40%;
+        top: 70px;
+    }
+}
